@@ -42,3 +42,14 @@ function updateLyrics() {
 
 splitLongLines();
 updateLyrics();
+window.onload = function() {
+    // Ajustar el volumen del audio al 40%
+    const audio = document.getElementById('background-audio');
+    if (audio) {
+        audio.volume = 0.4;
+    }
+
+    // Aplicar el efecto de fade-in
+    document.body.style.opacity = '1';
+};
+
